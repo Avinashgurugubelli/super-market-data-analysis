@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super market sales Analysis</title>
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link href="./styles/external/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Jquery JS -->
+    <script src="./scripts/external/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS  -->
+    <script src="./scripts/external/bootstrap.bundle.min.js"></script>
+    <!-- Loadash imports -->
+    <script src="./scripts/external/lodash.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #CCD1D1">
+        <div class="container-fluid">
+            <i class="bi-cart4 fa-10x" style="color:#900C3F; font-size:50px"></i>
+            <div class="mx-auto">
+                <h2>Super Market Sales Analysis</h2>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div style="margin-top:7rem;">
+            <div class="shadow-lg p-4 mb-4 bg-white">
+                <h4>Introduction</h4>
+                <p>
+                    The growth of supermarkets in most populated cities are increasing and market competitions are also
+                    high. The dataset is one of the historical sales of supermarket company which has recorded in 3
+                    different branches for 3 months data. Predictive data analytics methods are easy to apply with this
+                    dataset
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="shadow-lg p-4 mb-4 bg-white">
+                <h4>Motivation</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Motivation-1</li>
+                    <li class="list-group-item">Motivation-2</li>
+                    <li class="list-group-item">Motivation-3</li>
+                    <li class="list-group-item">Motivation-4</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="shadow-lg p-4 mb-4 bg-white">
+                <h4>Questions</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Question-1</li>
+                    <li class="list-group-item">Question-2</li>
+                    <li class="list-group-item">Question-3</li>
+                    <li class="list-group-item">Question-4</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="shadow p-4 mb-4 bg-white">
+                <h4>Attributes information</h4>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Desription</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Invoice id</td>
+                                <td>Computer generated sales slip invoice identification number</td>
+                            </tr>
+                            <tr>
+                                <td>Branch</td>
+                                <td>Branch of supercenter (3 branches are available identified by A, B and C).</td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td>Location of supercenters</td>
+                            </tr>
+                            <tr>
+                                <td>Customer type</td>
+                                <td>Type of customers, recorded by Members for customers using member card and Normal
+                                    for without member card.</td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td>Gender type of customer</td>
+                            </tr>
+                            <tr>
+                                <td>Product line</td>
+                                <td>General item categorization groups - Electronic accessories, Fashion accessories,
+                                    Food and beverages, Health and beauty, Home and lifestyle, Sports and travel</td>
+                            </tr>
+                            <tr>
+                                <td>Unit price</td>
+                                <td>Price of each product in $</td>
+                            </tr>
+                            <tr>
+                                <td>Tax</td>
+                                <td>5% tax fee for customer buying</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>Total price including tax</td>
+                            </tr>
+                            <tr>
+                                <td>Date</td>
+                                <td>Date of purchase (Record available from January 2019 to March 2019)</td>
+                            </tr>
+                            <tr>
+                                <td>Time</td>
+                                <td>Purchase time (10am to 9pm)</td>
+                            </tr>
+                            <tr>
+                                <td>Payment</td>
+                                <td>Payment used by customer for purchase (3 methods are available – Cash, Credit card
+                                    and Ewallet)</td>
+                            </tr>
+                            <tr>
+                                <td>COGS</td>
+                                <td>Cost of goods sold</td>
+                            </tr>
+                            <tr>
+                                <td>Rating</td>
+                                <td>Customer stratification rating on their overall shopping experience (On a scale of 1
+                                    to 10)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="shadow p-4 mb-4 bg-white">
+            <iframe src="./pages/product-line-summary.html" style="height:50vh;width:100%;border:none;overflow: hidden;"
+                title="Product line summary"></iframe>
+        </div>
+
+        <div class="shadow pt-4 ps-4 mb-4 bg-white">
+            <h4>Branch wise Analysis</h4>
+            <iframe src="./pages/branch-wise-analysis.html" style="height:85vh;width:100%;border:none;overflow: hidden;"
+                title="Product line summary"></iframe>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
